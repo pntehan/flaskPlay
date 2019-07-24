@@ -1,4 +1,4 @@
-SQLALCHEMY_DATABASE_URI = "mysql://root:jn123528@localhost/flaskmusic"
+SQLALCHEMY_DATABASE_URI = "mysql://<user>:<password>@<ip>/flaskplay"
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SERVER_IP = "0.0.0.0"
 SERVER_PORT = 80
