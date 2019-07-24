@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+ <div class="container">
+    <div class="row"> 
+        {% for x in contents %}
+            <div class="col-sm">
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="{{ x.image }}" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">{{ x.name }}</h5>
+				    <a href="/music/list-{{ x.name }}" class="btn btn-primary">Link</a>
+				  </div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

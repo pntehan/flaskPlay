@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+ 	<p>{{ title }}</p>
+    <audio src="{{ buildStaticUrl(path) }}" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <ul id="playlist">
+        <li>loading...</li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <!-- <script src="{{ buildStaticUrl('/js/audioPlayer.js') }}"></script> -->
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+{% endblock %}

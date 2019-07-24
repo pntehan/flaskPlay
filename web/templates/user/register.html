@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َPNTEHAN-{{ title }}</title>
+    <link rel="stylesheet" href="{{ buildStaticUrl('/css/style.css') }}">
+  </head>
+  <body>
+    <script src="{{ buildStaticUrl('/js/check.js') }}"></script>
+    <form class="box" onsubmit="return checkinfo()" action="/user/register" method="post">
+      <h1>Reigster</h1>
+      <input type="text" name="login_name" placeholder="Username">
+      <input type="password" name="login_pwd" placeholder="Password">
+      <input type="password" name="pwd" placeholder="Password Again">
+      <input type="submit" name="" value="register">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<ul class="list-group">
+	{% for x in content %}
+		<li class="list-group-item">{{ x }}</li>
+		<a href="/music/{{ title }}_{{ x }}" class="btn btn-primary">播放</a>
+	{% endfor %}
+</ul>
+{% endblock %}
