@@ -1,8 +1,8 @@
 # flaskPlay
-基于flask的视频，音频播放网站，前端代码均从youtube上寻找，后端逻辑是本人亲自编写
+基于flask的视音频播放网站
 ------
 ## 运行方法
-git文件后在根目录打开终端，输入命令: python manage.py runserver，默认使用本机Ip，端口为80##
+git文件后在根目录打开终端，输入命令: python manage.py runserver，默认使用本机Ip，端口为80
 ## 依赖包
 主要包如下:
 flask==1.0.2
